@@ -1,0 +1,87 @@
+/*Este es el estilo del Index*/
+
+.about{
+    height: 450px;
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    .container_about{
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagen_about imagen_about texto_about texto_about texto_about link_about"
+      "imagen_about imagen_about boton_about boton_about . link_about"
+      ". . . . . .";
+        .imagen_about{
+        grid-area: imagen_about;
+        justify-self: flex-start; 
+        }
+        .texto_about { 
+            grid-area: texto_about;
+        }
+        .boton_about{
+            grid-area: boton_about;
+            &:hover{
+                opacity: 50%;
+            }
+        }
+        .link_about{
+            grid-area: link_about;
+            justify-self: center; 
+        }
+}
+}
+
+/*Este es el estilo de la pagina*/
+
+.aboutus{
+    .container_aboutus {
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 5px;
+        align-items: center;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "About_img1 about_text1 about_text1"
+          "about_text2 about_text2 about_img2"
+          "about_img3 about_text3 about_text3";
+        .About_img1 { 
+            grid-area: About_img1; 
+        }
+        .about_text1 { 
+            grid-area: about_text1;
+            p{
+                text-align: justify;
+            } 
+            
+        }
+        .about_img2 { 
+            grid-area: about_img2; 
+        }
+        .about_text2 { 
+            grid-area: about_text2;
+            p{
+                text-align: justify;
+            } 
+            
+        }
+        .about_img3 { 
+            grid-area: about_img3; 
+        }
+        .about_text3 { 
+            grid-area: about_text3;
+            p{
+                text-align: justify;
+            }  
+            
+        }
+    }     
+}

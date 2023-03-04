@@ -1,0 +1,377 @@
+/* media queries para adaptacion tablet*/
+@media screen and (max-width: 768px) {
+
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "Texto Imagen"
+        "Texto Imagen"
+    }
+
+    h1{
+        font-size: 70px;
+    }
+
+    .intro{
+        background-image: url(../img/LoveIsLove_opacity.svg);
+        padding:10px;
+        height: 320px;
+    }
+    .Imagen img{
+        height: 50px;
+        width: 0.2px;
+    }
+
+    .container_about {  
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "imagen_about texto_about texto_about texto_about link_about"
+          "imagen_about boton_about boton_about . link_about"
+    }
+    .imagen_about img{
+        width: auto;
+    }
+    .poppins_22{
+        font-size: 16px;
+    }
+
+    .container_news { 
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.05fr 1fr 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "texto_news"
+          "news_1"
+          "news_2"
+          "news_3"
+          "news_4"
+          "news_5"
+    }
+    .news{
+        height: 1300px;
+    }
+
+    .container_help {
+        height: 250px; 
+        justify-content: center;
+    }
+    .Psychologist img{ 
+        width: 160px; 
+        height: 165px;
+    }
+      
+    .Endocrine img{ 
+        width: 160px; 
+        height: 165px; 
+    }
+      
+    .Counseling img{ 
+        width: 160px; 
+        height: 165px;
+    }
+      
+    .More img{ 
+        width: 160px; 
+        height: 165px;
+    }
+    .contact{
+        width: 100%;
+        height: 450px;
+        padding: 10px;
+    }
+    .container_contact { 
+        width: 100%; 
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: 0.4fr 1fr;
+        grid-template-areas:
+          "link_contact texto_contact texto_contact"
+          "link_contact form_contact form_contact"
+    }
+
+    .imagen_contact img{
+        height: 200px;
+        width: 0.2px;
+    }
+
+    .community{
+        height: auto;
+    }
+    .container_community { 
+        width: 100%;  
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "join_image join_image text_join text_join text_join"
+          "join_image join_image join_button . .";
+    }
+    .poppins_27{
+        font-size: 17px;
+    }
+
+    .container_footer { 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          "Terms Terms"
+          "Terms rrss"
+          "logo_footer logo footer"
+    }
+
+    footer{
+        height: 300px;
+    }
+    .logo_footer img{
+        width: 174px;
+        height: 108px;
+    }
+
+    .aboutus{
+        width: 90%;
+    }
+
+    .container_aboutus {
+        padding: 18px;
+        height: 750px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        grid-template-areas:
+          "ilustracion_about"
+          "texto_nosotros";
+    }
+    .poppins_17{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .ilustracion_about img{
+        width: 730px;
+        justify-self: center;
+    }
+    
+    
+}
+
+/* media queries para adaptacion mobile*/
+
+@media screen and (max-width: 390px) {
+
+    nav img{
+        width: 134px;
+        height: 68px;
+    }
+    
+    .container{
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "Texto Imagen"
+        "Texto Imagen"
+    }
+    .intro{
+        background-image: url(../img/LoveIsLove_opacity.svg);
+        padding:10px;
+        height: 320px;
+    }
+    .Imagen img{
+        height: 50px;
+        width: 0.2px;
+    }
+    h1{
+        font-size: 50px;
+        color: white;
+    }
+    .about{
+        width: 100%;
+        height: 300px;
+    }
+    .container_about {  
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 15px;
+        grid-template-areas:
+          "imagen_about texto_about texto_about texto_about link_about"
+          "imagen_about boton_about boton_about . link_about"
+    }
+    .imagen_about img{
+        width: 150px;
+        height: 200px;
+    }
+    .poppins_22{
+        font-size: 12px;
+    }
+    .link_about img{
+        height: 160px;
+    }
+    .boton_about img{
+        width: 150px;
+        justify-content: center;
+    }
+
+    .container_news {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.05fr 1fr 1fr 1fr 1fr;
+        box-sizing: border-box;
+        width: 400px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        grid-template-areas:
+          "texto_news"
+          "news_1"
+          "news_2"
+          "news_3"
+          "news_4"
+          "news_5"
+    }
+    .news{
+        height: 890px;
+        width: 80%;
+    }
+
+    .news_1 img{
+        width: 420px;
+        height: 194px;
+    }
+
+    .news_2 img{
+        width: 420px;
+        height: 194px;
+    }
+
+    .news_3 img{
+        width: 420px;
+        height: 194px;
+    }
+
+    .news_4 img{
+        width: 420px;
+        height: 194px;
+    }
+
+    .container_help {
+        height: 150px; 
+        justify-content: center;
+    }
+    .Psychologist img{ 
+        width: 95px; 
+        height: 100px;
+    }
+      
+    .Endocrine img{ 
+        width: 95px; 
+        height: 100px;
+    }
+      
+    .Counseling img{ 
+        width: 95px; 
+        height: 100px;
+    }
+      
+    .More img{ 
+        width: 95px; 
+        height: 100px;
+    }
+    .contact{
+        width: 100%;
+        height: 625px;
+    }
+    .container_contact { 
+        width: 100%; 
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: 0.4fr 1fr;
+        grid-template-areas:
+          "link_contact texto_contact texto_contact"
+          "link_contact form_contact form_contact"
+    }
+
+    .link_contact img{
+        height: 160px;
+    }
+    .imagen_contact img{
+        height: 50px;
+        width: 0.2px;
+    }
+
+    .community{
+        height: auto;
+    }
+    .container_community { 
+        width: 100%;  
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 10px;
+        grid-template-areas:
+          "join_image"
+          "text_join"
+          "join_button"
+    }
+    .poppins_27{
+        font-size: 14px;
+    }
+
+    .join_button img{
+        width: 150px;
+        justify-content: center;
+    }
+
+    .join_image img{
+        width: 160px;
+    }
+
+
+    .container_footer {
+        padding: 10px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.05fr 0.01fr 0.05fr;
+        grid-template-areas:
+          "Terms"
+          "rrss"
+          "logo_footer"  
+    }
+
+    .poppins_18{
+        font-size: 14px;
+    }
+    .poppins_14{
+        font-size: 10px;
+    }
+
+    .rrss ul li img{
+        width: 35px;
+        height: 28px;
+
+    }
+    footer{
+        height: auto;
+    }
+
+    .logo_footer img{
+        width: 174px;
+        height: 108px;
+    }
+    .container_aboutus {
+        padding: 15px;
+        height: 650px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        grid-template-areas:
+          "ilustracion_about"
+          "texto_nosotros";
+    }
+    .poppins_17{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .ilustracion_about img{
+        width: 350px;
+        justify-self: center;
+    }
+}

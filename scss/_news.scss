@@ -1,0 +1,112 @@
+.news{
+    .texto_news{
+        padding: 35px;
+    }
+    .carousel-inner{
+        height: 650px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        filter: invert(108%);
+    }
+} 
+
+/* aquí empieza el código de la página news*/
+
+.container_pagenews { 
+    margin: 10px auto;
+    padding: 40px;
+    width: 95%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 15px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img_princ img_princ img_princ img1 text_img1 text_img1"
+      "img_princ img_princ img_princ img2 text_img2 text_img2"
+      "img_princ img_princ img_princ img3 text_img3 text_img3"
+      "text_princ text_princ text_princ img4 text_img4 text_img4";
+    .img1 { 
+        grid-area: img1; 
+        img{
+            width: 210px;
+            height: 115px;
+            border-radius: 5%;
+            &:hover{
+                opacity: 50%;
+            }
+        }
+        }
+    .img2{
+        grid-area: img2;
+        img{
+            width: 210px;
+            height: 115px;
+            border-radius: 5%;
+            &:hover{
+                opacity: 50%;
+            }
+        }
+    }
+    .img3{
+        grid-area: img3;
+        img{
+            width: 210px;
+            height: 115px;
+            border-radius: 5%;
+            &:hover{
+                opacity: 50%;
+            }
+        }
+    }
+    .img4{
+        grid-area: img4;
+        img{
+            width: 210px;
+            height: 115px;
+            border-radius: 5%;
+            &:hover{
+                opacity: 50%;
+            }
+        }
+    }
+    .img_princ{
+        grid-area: img_princ;
+        img{
+            width: 630px;
+            height: 350px;
+        }
+    }
+    .text_princ { 
+        grid-area: text_princ;
+        align-self: flex-start;
+        p{
+            text-align: justify;
+        }
+    }
+    .text_img1 { 
+        grid-area: text_img1; 
+        p{
+            text-align: justify;
+        }
+    }
+    .text_img2 { 
+        grid-area: text_img2; 
+        p{
+            text-align: justify;
+        }
+    }
+    .text_img3 { 
+        grid-area: text_img3; 
+        p{
+            text-align: justify;
+        }
+    }
+    .text_img4 { 
+        grid-area: text_img4; 
+        p{
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.help{
+    .texto_help{
+        img{
+            padding: 35px;
+        }
+    }
+    .container_help{
+        margin-left: 150px;
+        padding: 90px;
+        width: 90%;
+        height: 440px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "Psychologist Endocrine Counseling More";
+            .Psychologist{
+                grid-area: Psychologist;
+                img{
+                    width: 175px;
+                    height: 236px;
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
+            }
+            .Endocrine { 
+                grid-area: Endocrine;
+                img{
+                    width: 175px;
+                    height: 236px;
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
+            }
+            .Counseling { 
+                grid-area: Counseling; 
+                img{
+                    width: 175px;
+                    height: 236px;
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
+            }
+            .More {
+                grid-area: More; 
+                img{
+                    width: 175px;
+                    height: 236px;
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
+            }
+        }
+}
+
+/* aquí empieza el código de la página help*/
+
+.helppage{
+    align-items: center;
+    display: flex;
+    margin: 10px auto;
+    padding: 50px;
+    justify-content: space-around;
+    img{
+        width: fit-content;
+        align-self: center;
+    }
+}

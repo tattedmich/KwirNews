@@ -1,0 +1,514 @@
+@media screen and (max-width: 768px) {
+    main{
+        .intro{
+            background-position: center;
+            height: 375px;
+            .container{
+                h1{
+                    font-size: 60px;
+                }
+            }
+        }
+        .about{
+            width: 100%;
+            height: 300px;
+            .container_about{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                "imagen_about texto_about texto_about texto_about link_about"
+                "imagen_about boton_about boton_about . link_about";
+                .imagen_about{
+                    img{
+                        width: 266px;
+                        height: 249px;
+                        align-items: center;
+                    }
+                }
+                .texto_about{
+                    p{
+                        text-align: justify;
+                        padding: 12px;
+                       }
+                    .poppins_22{
+                        font-size: 17px;
+                    }
+                }
+                .link_about{
+                    img{
+                        width: 23px;
+                        height: 263px;
+                    }
+
+                }
+                .boton_about{
+                    img{
+                        width: 205px;
+                        height: 41px;
+                    }
+                }
+            }
+        }
+        .news{
+            .carousel-inner{
+                height: 200px;
+            }
+        }
+        .help{
+            .container_help{
+                margin-left: 80px;
+                padding: 60px;
+                height: 500px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 40px;
+                grid-template-areas: 
+                "Psychologist Endocrine"
+                "Counseling More";
+                .Psychologist{
+                    img{
+                        width: 180px; 
+                        height: 185px;
+                    }
+                }
+                .Endocrine{
+                    img{
+                        width: 180px; 
+                        height: 185px;
+                    }
+                }
+                .Counseling{
+                    img{
+                        width: 180px; 
+                        height: 185px;
+                    }
+                }
+                .More{
+                    img{
+                        width: 180px; 
+                        height: 185px;
+                    }
+                }
+            }
+        }
+        .contact{
+            height: 500px;
+            .container_contact{
+                grid-template-areas:
+                "link_contact texto_contact texto_contact texto_contact ."
+                "link_contact form_contact form_contact form_contact ."
+                ". . . . .";
+            }
+        }
+        .community{
+            height: 250px;
+            .container_community{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "join_image"
+                "text_join"
+                "join_button";
+            }
+            .text_join{
+                .poppins_27{
+                    font-size: 20px;
+                    text-align: justify;
+                }
+            }
+
+        }
+    }
+    footer{
+        .container_footer{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "Terms"
+            "logo_footer"
+            "rrss";
+            .Terms{
+                ul{
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+    .aboutus{
+        .container_aboutus{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "About_img1"
+            "about_text1"
+            "about_img2"
+            "about_text2"
+            "about_img3"
+            "about_text3";
+            img{
+                width: 50%;
+                margin-left: 180px;
+            }
+        }
+    }
+    .container_pagenews{
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "img_princ"
+        "text_princ"
+        "img1"
+        "text_img1"
+        "img2"
+        "text_img2"
+        "img3"
+        "text_img3"
+        "img4"
+        "text_img4";
+        .img1{
+            margin-left: 125px;
+            img{
+                width: 400px;
+                height: 210px;
+            }
+        }
+        .img2{
+            margin-left: 125px;
+            img{
+                width: 400px;
+                height: 210px;
+            }
+        }
+        .img3{
+            margin-left: 125px;
+            img{
+                width: 400px;
+                height: 210px;
+            }
+        }
+        .img4{
+            margin-left: 125px;
+            img{ 
+                width: 400px;
+                height: 210px;
+            }
+        }
+        
+    }
+    .helppage{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        grid-template-areas: 
+        "psych endo"
+        "coun mor";
+        .psych{
+            grid-area: psych;
+        }
+        .endo{
+            grid-area: endo;
+        }
+        .coun{
+            grid-area: coun;
+        }
+        .mor{
+            grid-area: mor;
+        }
+    }
+    .contactpage{
+        background-image: url(../img/Contact_Background_Pages_OP.svg);
+        .container_contactpage{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 0.5fr;
+            row-gap: 20px;
+            grid-template-areas: 
+            "text_cont" 
+            "form_cont"
+            "text2_cont";
+            .text_cont{
+                p{
+                    text-align: center;
+                }
+            }
+            .text2_cont{
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .communitypage{
+        background-image: url(../img/Background_Community_OP.svg);
+        .container_communitypage{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.5fr 1fr;
+            grid-template-areas: 
+            "whatsapp_icon"
+            "join_button"
+            "text_whatsapp";
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    main{
+        animation: none !important;
+        .about{
+            height: 400px;
+        }
+        .help{
+            margin-left: 0px;
+            margin-right: 80px;
+        }
+        .contact{
+            height: 510px;
+        }
+    }
+    .aboutus{
+        .container_aboutus{
+            img{
+                width: 50%;
+                margin-left: 130px;
+            }
+        }
+    }
+    .container_pagenews{
+        .img1{
+            margin-left: 65px;
+        }
+        .img2{
+            margin-left: 65px;
+        }
+        .img3{
+            margin-left: 65px;
+        }
+        .img4{
+            margin-left: 65px;
+        }
+        .img_princ{
+            img{
+                width: 550px;
+                height: 270px;
+            }
+        }
+        .text_princ{
+            p{
+                text-align: center;
+            }
+        }
+        
+    }
+    .helppage{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-left: 125px;
+        row-gap: 20px;
+        grid-template-areas: 
+        "psych"
+        "endo"
+        "coun"
+        "mor";
+    }
+    .communitypage{
+        background-position: left center;
+        height: 500px;
+    }
+        
+    
+}
+
+@media screen and (max-width: 390px) {
+    main{
+        animation: none !important;
+        .intro{
+            height: 250px;
+            .container{
+                h1{
+                    font-size: 40px;
+                }
+            }
+        }
+        .about{
+            width: 100%;
+            height: 350px;
+            .container_about{
+                grid-template-columns: 0.5fr 1fr 0.25fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                "imagen_about texto_about link_about"
+                "imagen_about boton_about link_about";
+                .imagen_about{
+                    img{
+                        width: 134px;
+                        height: 125px;
+                        align-items: center;
+                    }
+                }
+                .texto_about{
+                    .poppins_22{
+                        font-size: 14px;
+                        text-align: justify;
+                    }
+                }
+                .link_about{
+                    img{
+                        width: 0px;
+                        height: 0px;
+                    }
+
+                }
+                .boton_about{
+                    img{
+                        width: 120px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        .help{
+            .container_help{
+                padding: 20px;
+                margin-left: 3px;
+                .Psychologist{
+                    img{
+                        width: 180px; 
+                        height: 185px;
+                    }
+                }
+                .Endocrine{
+                    img{
+                        width: 180px; 
+                        height: 185px;
+                    }
+                }
+                .Counseling{
+                    img{
+                        width: 180px; 
+                        height: 185px;
+                    }
+                }
+                .More{
+                    img{
+                        width: 180px; 
+                        height: 185px;
+                    }
+                }
+            }
+        }
+        .contact{
+            height: 550px;
+            .container_contact{
+                grid-template-columns: 0.5 1fr 1fr 1fr;
+                grid-template-rows: 0.25fr 1fr 1fr;
+                grid-template-areas:
+                "link_contact texto_contact texto_contact texto_contact ."
+                "link_contact form_contact form_contact form_contact ."
+                ". . . . .";
+                .link_contact{
+                    img{
+                        width: 50%;
+                        height: 50%;
+                    }
+                }
+                .texto_contact{
+                    .montserrat{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        .community{
+            height: 270px;
+            .text_join{
+                .poppins_27{
+                    font-size: 17px;
+                    text-align: justify;
+                }
+            }
+
+        }
+    }
+    footer{
+        height: auto;
+        .container_footer{
+            padding: 10px;
+            align-self: center;
+            .logo_footer{
+                margin-left: 30px;
+            }
+            .Terms{
+                ul{
+                    margin-left: 0;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+    .aboutus{
+        .container_aboutus{
+            grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+            img{
+                width: 75%;
+                margin-left: 40px;
+            }
+            .poppins_17{
+                font-size: 15px;
+                text-align: justify;
+            }
+        }
+    }
+    .container_pagenews{
+        padding: 20px;
+        row-gap: 20px;
+        .img1{
+            margin-left: 40px;
+            img{
+                width: 75%;
+                height: 75%;
+            }
+        }
+        .img2{
+            margin-left: 40px;
+            img{
+                width: 75%;
+                height: 75%;
+            }
+        }
+        .img3{
+            margin-left: 40px;
+            img{
+                width: 75%;
+                height: 75%;
+            }
+        }
+        .img4{
+            margin-left: 40px;
+            img{ 
+                width: 75%;
+                height: 75%;
+            }
+        }
+        .img_princ{
+            margin-left: 40px;
+            img{
+                width: 75%;
+                height: 75%;
+            }
+        }
+        
+    }
+    .helppage{
+        margin-left: 20px;
+    }
+    .contactpage{
+        height: 700px;
+    }
+    .communitypage{
+        height: 550px;
+    }
+}

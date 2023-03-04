@@ -1,0 +1,30 @@
+@import"fonts";
+@import"intro";
+@import"about";
+@import"community";
+@import"contact";
+@import"footer";
+@import"news";
+@import"help";
+@import"media";
+
+
+/* hovers del navbar*/
+
+header{
+    nav{
+        div{
+            ul{
+                li{
+                    a:hover{
+                        font-weight: bold;
+                        }   
+                    }
+                .dropdown:hover .dropdown-menu{
+                    display: block;
+                    margin-top: 0;  
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,689 @@
+@charset "UTF-8";
+.poppins_14 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: regular; }
+
+.poppins_16 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: italic; }
+
+.poppins_17 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px; }
+
+.poppins_17b {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: bold; }
+
+.poppins_18 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: bold; }
+
+.poppins_18_black {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: bold; }
+
+.poppins_20 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
+
+.poppins_22 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px; }
+
+.poppins_27 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px; }
+
+.poppins_30 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px; }
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px; }
+
+.intro {
+  background-image: url(../img/Intro_Background.svg);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: cover;
+  width: 100%;
+  height: 500px; }
+  .intro .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "Texto . ." ". . ." ". . ."; }
+    .intro .container .texto {
+      grid-area: Texto;
+      padding: 0; }
+    .intro .container h1 {
+      font-size: 80px;
+      font-family: 'Montserrat', sans-serif; }
+
+/*Este es el estilo del Index*/
+.about {
+  height: 450px;
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px; }
+  .about .container_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "imagen_about imagen_about texto_about texto_about texto_about link_about" "imagen_about imagen_about boton_about boton_about . link_about" ". . . . . ."; }
+    .about .container_about .imagen_about {
+      grid-area: imagen_about;
+      justify-self: flex-start; }
+    .about .container_about .texto_about {
+      grid-area: texto_about; }
+    .about .container_about .boton_about {
+      grid-area: boton_about; }
+      .about .container_about .boton_about:hover {
+        opacity: 50%; }
+    .about .container_about .link_about {
+      grid-area: link_about;
+      justify-self: center; }
+
+/*Este es el estilo de la pagina*/
+.aboutus .container_aboutus {
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 5px;
+  align-items: center;
+  grid-auto-flow: row;
+  grid-template-areas: "About_img1 about_text1 about_text1" "about_text2 about_text2 about_img2" "about_img3 about_text3 about_text3"; }
+  .aboutus .container_aboutus .About_img1 {
+    grid-area: About_img1; }
+  .aboutus .container_aboutus .about_text1 {
+    grid-area: about_text1; }
+    .aboutus .container_aboutus .about_text1 p {
+      text-align: justify; }
+  .aboutus .container_aboutus .about_img2 {
+    grid-area: about_img2; }
+  .aboutus .container_aboutus .about_text2 {
+    grid-area: about_text2; }
+    .aboutus .container_aboutus .about_text2 p {
+      text-align: justify; }
+  .aboutus .container_aboutus .about_img3 {
+    grid-area: about_img3; }
+  .aboutus .container_aboutus .about_text3 {
+    grid-area: about_text3; }
+    .aboutus .container_aboutus .about_text3 p {
+      text-align: justify; }
+
+.community {
+  background-color: #c9c5c5;
+  height: auto; }
+  .community .container_community {
+    margin-left: 20px;
+    padding: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "join_image join_image text_join text_join text_join" "join_image join_image join_button . ."; }
+    .community .container_community .text_join {
+      grid-area: text_join; }
+    .community .container_community .join_image {
+      grid-area: join_image; }
+    .community .container_community .join_button {
+      grid-area: join_button; }
+      .community .container_community .join_button:hover {
+        opacity: 50%; }
+
+/* aquí empieza el estilo de community*/
+.communitypage {
+  background-image: url(../img/Background_Community.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  width: 100%; }
+
+.container_communitypage {
+  padding: 70px;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "whatsapp_icon ." "join_button ." "text_whatsapp ."; }
+  .container_communitypage .whatsapp_icon {
+    grid-area: whatsapp_icon;
+    justify-self: center; }
+  .container_communitypage .join_button {
+    grid-area: join_button;
+    justify-self: center; }
+  .container_communitypage .text_whatsapp {
+    grid-area: text_whatsapp;
+    justify-self: center; }
+    .container_communitypage .text_whatsapp p {
+      text-align: center; }
+
+.contact {
+  background-image: url(../img/Contact_Background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  width: 100%;
+  height: 540px; }
+  .contact .container_contact {
+    margin: 10px auto;
+    padding: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "link_contact texto_contact texto_contact . ." "link_contact form_contact form_contact . ." ". . . . ."; }
+    .contact .container_contact .link_contact {
+      grid-area: link_contact; }
+    .contact .container_contact .texto_contact {
+      grid-area: texto_contact; }
+    .contact .container_contact .form_contact {
+      grid-area: form_contact; }
+
+/* aquí empieza el estilo de contact*/
+.contactpage {
+  background-image: url(../img/Contact_Background_Pages.svg);
+  background-repeat: no-repeat;
+  background-attachment: local; }
+  .contactpage .container_contactpage {
+    padding: 20px;
+    width: 95%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.4fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . text_cont text_cont" ". . form_cont form_cont" ". . text2_cont text2_cont"; }
+    .contactpage .container_contactpage .text_cont {
+      grid-area: text_cont; }
+    .contactpage .container_contactpage .form_cont {
+      grid-area: form_cont; }
+    .contactpage .container_contactpage .text2_cont {
+      grid-area: text2_cont; }
+      .contactpage .container_contactpage .text2_cont p {
+        text-align: justify; }
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: auto; }
+  footer .container_footer {
+    padding: 20px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr 0.8fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    align-self: auto;
+    gap: 0px 0px;
+    grid-template-areas: "Terms . . logo_footer" "Terms rrss rrss logo_footer"; }
+    footer .container_footer .logo_footer {
+      grid-area: logo_footer;
+      margin-left: 200px; }
+    footer .container_footer .rrss {
+      grid-area: rrss; }
+      footer .container_footer .rrss ul {
+        list-style-type: none;
+        display: flex;
+        padding: 35px;
+        justify-content: center; }
+        footer .container_footer .rrss ul li {
+          padding: 20px; }
+          footer .container_footer .rrss ul li img:hover {
+            opacity: 50%; }
+  footer .Terms {
+    grid-area: Terms; }
+    footer .Terms ul li {
+      list-style-type: none;
+      padding: 10px; }
+      footer .Terms ul li a {
+        color: white;
+        text-decoration: none; }
+        footer .Terms ul li a:hover {
+          opacity: 50%; }
+
+.news .texto_news {
+  padding: 35px; }
+
+.news .carousel-inner {
+  height: 650px; }
+
+.news .carousel-control-prev-icon, .news .carousel-control-next-icon {
+  filter: invert(108%); }
+
+/* aquí empieza el código de la página news*/
+.container_pagenews {
+  margin: 10px auto;
+  padding: 40px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+  gap: 15px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "img_princ img_princ img_princ img1 text_img1 text_img1" "img_princ img_princ img_princ img2 text_img2 text_img2" "img_princ img_princ img_princ img3 text_img3 text_img3" "text_princ text_princ text_princ img4 text_img4 text_img4"; }
+  .container_pagenews .img1 {
+    grid-area: img1; }
+    .container_pagenews .img1 img {
+      width: 210px;
+      height: 115px;
+      border-radius: 5%; }
+      .container_pagenews .img1 img:hover {
+        opacity: 50%; }
+  .container_pagenews .img2 {
+    grid-area: img2; }
+    .container_pagenews .img2 img {
+      width: 210px;
+      height: 115px;
+      border-radius: 5%; }
+      .container_pagenews .img2 img:hover {
+        opacity: 50%; }
+  .container_pagenews .img3 {
+    grid-area: img3; }
+    .container_pagenews .img3 img {
+      width: 210px;
+      height: 115px;
+      border-radius: 5%; }
+      .container_pagenews .img3 img:hover {
+        opacity: 50%; }
+  .container_pagenews .img4 {
+    grid-area: img4; }
+    .container_pagenews .img4 img {
+      width: 210px;
+      height: 115px;
+      border-radius: 5%; }
+      .container_pagenews .img4 img:hover {
+        opacity: 50%; }
+  .container_pagenews .img_princ {
+    grid-area: img_princ; }
+    .container_pagenews .img_princ img {
+      width: 630px;
+      height: 350px; }
+  .container_pagenews .text_princ {
+    grid-area: text_princ;
+    align-self: flex-start; }
+    .container_pagenews .text_princ p {
+      text-align: justify; }
+  .container_pagenews .text_img1 {
+    grid-area: text_img1; }
+    .container_pagenews .text_img1 p {
+      text-align: justify; }
+  .container_pagenews .text_img2 {
+    grid-area: text_img2; }
+    .container_pagenews .text_img2 p {
+      text-align: justify; }
+  .container_pagenews .text_img3 {
+    grid-area: text_img3; }
+    .container_pagenews .text_img3 p {
+      text-align: justify; }
+  .container_pagenews .text_img4 {
+    grid-area: text_img4; }
+    .container_pagenews .text_img4 p {
+      text-align: justify; }
+
+.help .texto_help img {
+  padding: 35px; }
+
+.help .container_help {
+  margin-left: 150px;
+  padding: 90px;
+  width: 90%;
+  height: 440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Psychologist Endocrine Counseling More"; }
+  .help .container_help .Psychologist {
+    grid-area: Psychologist; }
+    .help .container_help .Psychologist img {
+      width: 175px;
+      height: 236px; }
+      .help .container_help .Psychologist img:hover {
+        opacity: 50%; }
+  .help .container_help .Endocrine {
+    grid-area: Endocrine; }
+    .help .container_help .Endocrine img {
+      width: 175px;
+      height: 236px; }
+      .help .container_help .Endocrine img:hover {
+        opacity: 50%; }
+  .help .container_help .Counseling {
+    grid-area: Counseling; }
+    .help .container_help .Counseling img {
+      width: 175px;
+      height: 236px; }
+      .help .container_help .Counseling img:hover {
+        opacity: 50%; }
+  .help .container_help .More {
+    grid-area: More; }
+    .help .container_help .More img {
+      width: 175px;
+      height: 236px; }
+      .help .container_help .More img:hover {
+        opacity: 50%; }
+
+/* aquí empieza el código de la página help*/
+.helppage {
+  align-items: center;
+  display: flex;
+  margin: 10px auto;
+  padding: 50px;
+  justify-content: space-around; }
+  .helppage img {
+    width: fit-content;
+    align-self: center; }
+
+@media screen and (max-width: 768px) {
+  main .intro {
+    background-position: center;
+    height: 375px; }
+    main .intro .container h1 {
+      font-size: 60px; }
+  main .about {
+    width: 100%;
+    height: 300px; }
+    main .about .container_about {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "imagen_about texto_about texto_about texto_about link_about" "imagen_about boton_about boton_about . link_about"; }
+      main .about .container_about .imagen_about img {
+        width: 266px;
+        height: 249px;
+        align-items: center; }
+      main .about .container_about .texto_about p {
+        text-align: justify;
+        padding: 12px; }
+      main .about .container_about .texto_about .poppins_22 {
+        font-size: 17px; }
+      main .about .container_about .link_about img {
+        width: 23px;
+        height: 263px; }
+      main .about .container_about .boton_about img {
+        width: 205px;
+        height: 41px; }
+  main .news .carousel-inner {
+    height: 200px; }
+  main .help .container_help {
+    margin-left: 80px;
+    padding: 60px;
+    height: 500px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    grid-template-areas: "Psychologist Endocrine" "Counseling More"; }
+    main .help .container_help .Psychologist img {
+      width: 180px;
+      height: 185px; }
+    main .help .container_help .Endocrine img {
+      width: 180px;
+      height: 185px; }
+    main .help .container_help .Counseling img {
+      width: 180px;
+      height: 185px; }
+    main .help .container_help .More img {
+      width: 180px;
+      height: 185px; }
+  main .contact {
+    height: 500px; }
+    main .contact .container_contact {
+      grid-template-areas: "link_contact texto_contact texto_contact texto_contact ." "link_contact form_contact form_contact form_contact ." ". . . . ."; }
+  main .community {
+    height: 250px; }
+    main .community .container_community {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "join_image" "text_join" "join_button"; }
+    main .community .text_join .poppins_27 {
+      font-size: 20px;
+      text-align: justify; }
+  footer .container_footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Terms" "logo_footer" "rrss"; }
+    footer .container_footer .Terms ul {
+      text-align: center; }
+  .aboutus .container_aboutus {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "About_img1" "about_text1" "about_img2" "about_text2" "about_img3" "about_text3"; }
+    .aboutus .container_aboutus img {
+      width: 50%;
+      margin-left: 180px; }
+  .container_pagenews {
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "img_princ" "text_princ" "img1" "text_img1" "img2" "text_img2" "img3" "text_img3" "img4" "text_img4"; }
+    .container_pagenews .img1 {
+      margin-left: 125px; }
+      .container_pagenews .img1 img {
+        width: 400px;
+        height: 210px; }
+    .container_pagenews .img2 {
+      margin-left: 125px; }
+      .container_pagenews .img2 img {
+        width: 400px;
+        height: 210px; }
+    .container_pagenews .img3 {
+      margin-left: 125px; }
+      .container_pagenews .img3 img {
+        width: 400px;
+        height: 210px; }
+    .container_pagenews .img4 {
+      margin-left: 125px; }
+      .container_pagenews .img4 img {
+        width: 400px;
+        height: 210px; }
+  .helppage {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    grid-template-areas: "psych endo" "coun mor"; }
+    .helppage .psych {
+      grid-area: psych; }
+    .helppage .endo {
+      grid-area: endo; }
+    .helppage .coun {
+      grid-area: coun; }
+    .helppage .mor {
+      grid-area: mor; }
+  .contactpage {
+    background-image: url(../img/Contact_Background_Pages_OP.svg); }
+    .contactpage .container_contactpage {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 1fr 0.5fr;
+      row-gap: 20px;
+      grid-template-areas: "text_cont"  "form_cont" "text2_cont"; }
+      .contactpage .container_contactpage .text_cont p {
+        text-align: center; }
+      .contactpage .container_contactpage .text2_cont p {
+        text-align: center; }
+  .communitypage {
+    background-image: url(../img/Background_Community_OP.svg); }
+    .communitypage .container_communitypage {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 0.5fr 1fr;
+      grid-template-areas: "whatsapp_icon" "join_button" "text_whatsapp"; } }
+
+@media screen and (max-width: 600px) {
+  main .about {
+    height: 400px; }
+  main .help {
+    margin-left: 0px;
+    margin-right: 80px; }
+  main .contact {
+    height: 510px; }
+  .aboutus .container_aboutus img {
+    width: 50%;
+    margin-left: 130px; }
+  .container_pagenews .img1 {
+    margin-left: 65px; }
+  .container_pagenews .img2 {
+    margin-left: 65px; }
+  .container_pagenews .img3 {
+    margin-left: 65px; }
+  .container_pagenews .img4 {
+    margin-left: 65px; }
+  .container_pagenews .img_princ img {
+    width: 550px;
+    height: 270px; }
+  .container_pagenews .text_princ p {
+    text-align: center; }
+  .helppage {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-left: 125px;
+    row-gap: 20px;
+    grid-template-areas: "psych" "endo" "coun" "mor"; }
+  .communitypage {
+    background-position: left center;
+    height: 500px; } }
+
+@media screen and (max-width: 390px) {
+  main .intro {
+    height: 250px; }
+    main .intro .container h1 {
+      font-size: 40px; }
+  main .about {
+    width: 100%;
+    height: 350px; }
+    main .about .container_about {
+      grid-template-columns: 0.5fr 1fr 0.25fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "imagen_about texto_about link_about" "imagen_about boton_about link_about"; }
+      main .about .container_about .imagen_about img {
+        width: 134px;
+        height: 125px;
+        align-items: center; }
+      main .about .container_about .texto_about .poppins_22 {
+        font-size: 14px;
+        text-align: justify; }
+      main .about .container_about .link_about img {
+        width: 0px;
+        height: 0px; }
+      main .about .container_about .boton_about img {
+        width: 120px;
+        height: 30px; }
+  main .help .container_help {
+    padding: 20px;
+    margin-left: 3px; }
+    main .help .container_help .Psychologist img {
+      width: 180px;
+      height: 185px; }
+    main .help .container_help .Endocrine img {
+      width: 180px;
+      height: 185px; }
+    main .help .container_help .Counseling img {
+      width: 180px;
+      height: 185px; }
+    main .help .container_help .More img {
+      width: 180px;
+      height: 185px; }
+  main .contact {
+    height: 550px; }
+    main .contact .container_contact {
+      grid-template-columns: 0.5 1fr 1fr 1fr;
+      grid-template-rows: 0.25fr 1fr 1fr;
+      grid-template-areas: "link_contact texto_contact texto_contact texto_contact ." "link_contact form_contact form_contact form_contact ." ". . . . ."; }
+      main .contact .container_contact .link_contact img {
+        width: 50%;
+        height: 50%; }
+      main .contact .container_contact .texto_contact .montserrat {
+        font-size: 22px; }
+  main .community {
+    height: 270px; }
+    main .community .text_join .poppins_27 {
+      font-size: 17px;
+      text-align: justify; }
+  footer {
+    height: auto; }
+    footer .container_footer {
+      padding: 10px;
+      align-self: center; }
+      footer .container_footer .logo_footer {
+        margin-left: 30px; }
+      footer .container_footer .Terms ul {
+        margin-left: 0;
+        text-align: center; }
+  .aboutus .container_aboutus {
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr; }
+    .aboutus .container_aboutus img {
+      width: 75%;
+      margin-left: 40px; }
+    .aboutus .container_aboutus .poppins_17 {
+      font-size: 15px;
+      text-align: justify; }
+  .container_pagenews {
+    padding: 20px;
+    row-gap: 20px; }
+    .container_pagenews .img1 {
+      margin-left: 40px; }
+      .container_pagenews .img1 img {
+        width: 75%;
+        height: 75%; }
+    .container_pagenews .img2 {
+      margin-left: 40px; }
+      .container_pagenews .img2 img {
+        width: 75%;
+        height: 75%; }
+    .container_pagenews .img3 {
+      margin-left: 40px; }
+      .container_pagenews .img3 img {
+        width: 75%;
+        height: 75%; }
+    .container_pagenews .img4 {
+      margin-left: 40px; }
+      .container_pagenews .img4 img {
+        width: 75%;
+        height: 75%; }
+    .container_pagenews .img_princ {
+      margin-left: 40px; }
+      .container_pagenews .img_princ img {
+        width: 75%;
+        height: 75%; }
+  .helppage {
+    margin-left: 20px; }
+  .contactpage {
+    height: 700px; }
+  .communitypage {
+    height: 550px; } }
+
+/* hovers del navbar*/
+header nav div ul li a:hover {
+  font-weight: bold; }
+
+header nav div ul .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; }

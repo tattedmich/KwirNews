@@ -1,0 +1,59 @@
+footer{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    .container_footer {
+        padding: 20px;
+        width: 95%;  
+        display: grid;
+        grid-template-columns: 1.5fr 0.8fr 0.8fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        align-self: auto;
+        gap: 0px 0px;
+        grid-template-areas:
+          "Terms . . logo_footer"
+          "Terms rrss rrss logo_footer";
+          
+        .logo_footer{
+                grid-area: logo_footer;
+                margin-left: 200px
+            }
+            
+        .rrss { 
+            grid-area: rrss;
+            ul{
+                list-style-type: none;
+                display: flex;
+                padding: 35px;
+                justify-content: center;
+                li{
+                    padding: 20px;
+                    img{
+                        &:hover{
+                            opacity: 50%;
+                        }
+                    }
+                }
+            }
+        }
+            }
+        .Terms { 
+            grid-area: Terms; 
+            ul{
+                li{
+                    list-style-type: none;
+                    padding: 10px;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        &:hover{
+                            opacity: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    
+}
+            
+          
